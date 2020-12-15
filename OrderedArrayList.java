@@ -45,4 +45,10 @@ public class OrderedArrayList <T extends Comparable <T>> extends NoNullArrayList
     super.add(index, thing);
     sorter();
   }
+
+  public T set (int index, T thing) {
+    T a = super.set(index, thing);
+    sorter();
+    return a;
+  }
 }
