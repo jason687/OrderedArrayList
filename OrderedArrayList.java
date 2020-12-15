@@ -40,4 +40,9 @@ public class OrderedArrayList <T extends Comparable <T>> extends NoNullArrayList
       j -= 1;
     }
   }
+
+  public void add (int index, T thing) {
+    super.add(index, thing);
+    sorter();
+  }
 }
